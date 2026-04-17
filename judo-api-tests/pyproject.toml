@@ -1,0 +1,14 @@
+[project]
+name = "judo-api-tests"
+version = "0.1.0"
+description = "Proyecto base para pruebas de API con Judo Framework"
+requires-python = ">=3.10"
+dependencies = [
+  "judo-framework>=1.6.9",
+  "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"
